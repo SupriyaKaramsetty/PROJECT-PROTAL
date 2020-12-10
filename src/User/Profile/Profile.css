@@ -1,0 +1,57 @@
+.circle {
+    background: url("../../assets/profile.jpg");
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 95px;
+    margin-top: 45px;
+    
+}
+p{
+    margin-top:15px;
+    text-align: center;
+    color:white;
+    font-size:18px;
+    margin-bottom:0px;
+
+}
+small{
+    margin-left: 125px;
+    background: -webkit-linear-gradient(#ddd, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.verticalline{
+        border:1px solid white;
+        min-height: 100vh;
+        width:0px;
+        background: white;
+}
+
+.wallpaper{
+    margin:0;
+    padding:0;
+    background-size: cover;
+    width:350px;
+    object-fit: cover;
+}
+
+i{
+    color:white;
+}
+
+.buzzes{
+    margin-left: -18px;
+}
+.followers{
+    margin-left: -25px;
+}
+.imageresponsive{
+    width:175px;
+    display: flex;
+    height:175px;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+    margin-bottom:0px;
+}
