@@ -1,8 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-
-
-
 import Signup from '../src/User/Signup/Signup';
 import Profile from '../src/User/Profile/Profile';
 import Home from '../src/Home/Home';
@@ -13,6 +10,7 @@ function App() {
     <BrowserRouter>
     <Menu />
     <Switch>
+        <Route exact path="/" component={Signup}></Route>
         <Route exact path="/signup" component={Signup}></Route>
         <Route exact path="/profile" component={Profile}></Route>
         <Route exact path="/home" component={Home}></Route>

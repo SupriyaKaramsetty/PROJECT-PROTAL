@@ -26,7 +26,7 @@ const Menu = (props) => {
             </div>
             <div className={styles.navIcons}>
                 <Link to="/"><ion-icon style={activeLink(props.history,'/')} name="home-outline"></ion-icon></Link>
-                <Link to="/"><ion-icon style={activeLink(props.history,'/home')} name="trending-up-outline"></ion-icon></Link>
+                <Link to="/home"><ion-icon style={activeLink(props.history,'/home')} name="trending-up-outline"></ion-icon></Link>
                 <Link to="/profile"><ion-icon style={activeLink(props.history,'/profile')} name="person-outline"></ion-icon></Link>
                 <Link to="/signup"><ion-icon style={activeLink(props.history,'/signup')}  name="settings-outline"></ion-icon></Link>
             </div>
