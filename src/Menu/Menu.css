@@ -20,8 +20,10 @@
   margin-left:7%;
   justify-self: start;
 }
+
 .navSearch input{
-  
+  text-align: left;
+  margin-left:-38%;
   padding:2px 45px;
   border-radius:3px;
   border:1px solid grey;
@@ -41,8 +43,8 @@
   color:rgb(255,255,0);
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navSearch input {
     display: none;
   }
-} */
+}

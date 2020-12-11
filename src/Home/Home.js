@@ -1,7 +1,21 @@
 import  React, {UseState, Component} from 'react';
 import styles from './Home.css';
 import Carousel from "react-elastic-carousel";
+import status from '../assets/status.jpg';
+import dancephoto1 from '../assets/dance-photo1.jpg';
+import dancephoto2 from '../assets/dance-photo2.jpg';
+import dancephoto3 from '../assets/dance-photo3.jpg';
+import dancephoto4 from '../assets/dance-photo4.jpg';
+import musicphoto from '../assets/music-photo.jpg';
+import musicphoto1 from '../assets/music-photo1.jpg';
+import musicphoto2 from '../assets/music-photo2.jpg';
+import musicphoto3 from '../assets/music-photo3.jpg';
+import photo1 from '../assets/photo1.jpg';
+import photo2 from '../assets/photo2.jpg';
+import photo3 from '../assets/photo3.jpg';
+import photo4 from '../assets/photo4.jpg';
 import wall from '../assets/wallpaper.jpg';
+
 
 const breakPoints = [
     {
@@ -49,18 +63,18 @@ const Home = () => {
 
            <Carousel breakPoints={breakPoints}
             >
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
-            <img className={styles.status} src={wall} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
+            <img className={styles.status} src={status} alt=""></img>
            </Carousel>
 
            <div className={styles.talents}>
@@ -70,27 +84,27 @@ const Home = () => {
                    <Carousel breakPoints={breakPoints2}
                    infinite={true}>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={dancephoto1} alt=""></img>
+                            <img className={styles.photo2} src={dancephoto2} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={dancephoto3} alt=""></img>
+                                <img className={styles.photo4} src={dancephoto4} alt=""></img>
                             </div>
                        </div>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={dancephoto1} alt=""></img>
+                            <img className={styles.photo2} src={dancephoto2} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={dancephoto3} alt=""></img>
+                                <img className={styles.photo4} src={dancephoto4} alt=""></img>
                             </div>
                        </div>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={dancephoto1} alt=""></img>
+                            <img className={styles.photo2} src={dancephoto2} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={dancephoto3} alt=""></img>
+                                <img className={styles.photo4} src={dancephoto4} alt=""></img>
                             </div>
                        </div>
                    </Carousel>
@@ -101,27 +115,27 @@ const Home = () => {
                     <Carousel breakPoints={breakPoints2}
                    infinite={true}>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={musicphoto} alt=""></img>
+                            <img className={styles.photo2} src={musicphoto1} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={musicphoto2} alt=""></img>
+                                <img className={styles.photo4} src={musicphoto3} alt=""></img>
                             </div>
                        </div>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={musicphoto} alt=""></img>
+                            <img className={styles.photo2} src={musicphoto1} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={musicphoto2} alt=""></img>
+                                <img className={styles.photo4} src={musicphoto3} alt=""></img>
                             </div>
                        </div>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={musicphoto} alt=""></img>
+                            <img className={styles.photo2} src={musicphoto1} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={musicphoto2} alt=""></img>
+                                <img className={styles.photo4} src={musicphoto3} alt=""></img>
                             </div>
                        </div>
                    </Carousel>
@@ -131,27 +145,27 @@ const Home = () => {
                     <Carousel breakPoints={breakPoints2}
                    infinite={true}>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={photo1} alt=""></img>
+                            <img className={styles.photo2} src={photo2} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={photo3} alt=""></img>
+                                <img className={styles.photo4} src={photo4} alt=""></img>
                             </div>
                        </div>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={photo1} alt=""></img>
+                            <img className={styles.photo2} src={photo2} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={photo3} alt=""></img>
+                                <img className={styles.photo4} src={photo4} alt=""></img>
                             </div>
                        </div>
                        <div className={styles.block}>
-                            <img className={`${styles.photo1} ${styles.subblock}`} src={wall} alt=""></img>
-                            <img className={styles.photo2} src={wall} alt=""></img>
+                            <img className={`${styles.photo1} ${styles.subblock}`} src={photo1} alt=""></img>
+                            <img className={styles.photo2} src={photo2} alt=""></img>
                             <div className={styles.combined34}>
-                                <img className={styles.photo3} src={wall} alt=""></img>
-                                <img className={styles.photo4} src={wall} alt=""></img>
+                                <img className={styles.photo3} src={photo3} alt=""></img>
+                                <img className={styles.photo4} src={photo4} alt=""></img>
                             </div>
                        </div>
                    </Carousel>

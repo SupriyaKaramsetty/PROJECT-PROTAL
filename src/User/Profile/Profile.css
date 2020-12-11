@@ -9,12 +9,13 @@
 }
 
 .profileDp {
-    background: url("../../assets/profile.jpg");
+    background: url("../../assets/dp.jpg");
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin:auto ;
     margin-top: 40px; 
+    background-size:contain;
 }
 .name {
     text-align: center;
@@ -33,22 +34,22 @@ small{
     grid-template-columns: auto auto;
     justify-content: center;
 }
-ion-icon{
+.Icons ion-icon{
      font-size: 40px;
     padding:20px;
     color:white;
 }
 .wallpaper{
     width:100%;
-    height:250px;
+    height:280px;
     background-size: contain;
-    /* object-fit: cover;
-    object-position: center ; */
+    
+   
 }
 .likes{
     display:flex;
     justify-content: center;
-    /* align-items:center; */
+   
 }
 .likes p{
     margin:10px;
@@ -56,6 +57,8 @@ ion-icon{
     text-align: center;
 }
 .likes ion-icon{
+    font-size: 40px;
+    padding:20px;
     color:white;
 }
 .posts{
@@ -69,16 +72,12 @@ ion-icon{
     height:250px;
     padding:25px;
     text-align: center;
+    background-size: contain;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1000px) {
-    /* .profileContainer{
-        grid:none;  
-    }
-    .accountOptions{
-        justify-content: center;
-        border-bottom: 1px solid white;
-    } */
+
     .posts{
         grid-template-columns: repeat(3,200px); 
     }

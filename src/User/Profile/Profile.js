@@ -2,8 +2,16 @@ import  React, {Component} from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import styles from './Profile.css';
 import wallpaper from '../../assets/wallpaper.jpg';
-
-import Wallpapar from '../../assets/profile.jpg';
+import dp from '../../assets/dp.jpg';
+import dish1 from '../../assets/dish1.jpg';
+import dish2 from '../../assets/dish2.jpg';
+import dish3 from '../../assets/dish3.jpg';
+import dish4 from '../../assets/dish4.jpg';
+import dish5 from '../../assets/dish5.jpg';
+import dish6 from '../../assets/dish6.jpg';
+import dish7 from '../../assets/dish7.jpg';
+import dish8 from '../../assets/dish8.jpg';
+import dish9 from '../../assets/dish9.jpg';
 
 const Profile = () => {
     return(
@@ -32,18 +40,16 @@ const Profile = () => {
                 </div>
                 <div className={styles.posts}>
                     
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
-                    <img src={wallpaper} alt=""></img>
+                    <img src={dish1} alt=""></img>
+                    <img src={dish2} alt=""></img>
+                    <img src={dish3} alt=""></img>
+                    <img src={dish4} alt=""></img>
+                    <img src={dish5} alt=""></img>
+                    <img src={dish6} alt=""></img>
+                    <img src={dish7} alt=""></img>
+                    <img src={dish8} alt=""></img>
+                    <img src={dish9} alt=""></img>
+                    
                 </div>
             </div>
             

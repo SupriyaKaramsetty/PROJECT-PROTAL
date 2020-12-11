@@ -14,13 +14,13 @@ const Signup = () => {
             </span>
             <form>
                <div className={styles.signupData}>
-                   <input type="text"  name="name" className={styles.inputfield}/>
+                   <input type="text"  name="name" placeholder="Becky Helen" className={styles.inputfield}/>
                    <label className={styles.inputname}>Name</label><br></br>
                   
-                   <input type="email" name="email" className={styles.inputfield}/>
+                   <input type="email" name="email" placeholder="xy@gmail.com" className={styles.inputfield}/>
                    <label className={styles.inputname}>Email id</label><br></br>
                    
-               <input type="password" name="password" className={styles.inputfield}/>
+               <input type="password" name="password" placeholder="password" className={styles.inputfield}/>
                <label className={styles.inputname}>Password</label><br></br> 
                </div>
                 <button className={styles.next}>Next</button>
