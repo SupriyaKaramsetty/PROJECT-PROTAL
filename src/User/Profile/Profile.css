@@ -42,7 +42,7 @@ small{
 .wallpaper{
     width:100%;
     height:280px;
-    background-size: contain;
+    background-size: cover;
     
    
 }

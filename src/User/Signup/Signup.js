@@ -1,5 +1,6 @@
 import styles from './Signup.css';
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Signup = () => {
     return(
@@ -23,7 +24,10 @@ const Signup = () => {
                <input type="password" name="password" placeholder="password" className={styles.inputfield}/>
                <label className={styles.inputname}>Password</label><br></br> 
                </div>
-                <button className={styles.next}>Next</button>
+               <Link to="/profile">
+                    <button className={styles.next}>Next</button>
+               </Link>
+                
             </form>
             </div>
         </div>
