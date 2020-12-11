@@ -1,22 +1,38 @@
 import  React, {Component} from 'react';
-import { BrowserRouter,Link } from 'react-router-dom';
+import { withRouter,Link } from 'react-router-dom';
+import styles from './Menu.css';
 
-const Menu = () => {
+
+const activeLink = (history,path) =>{
+    if(history.location.pathname==path){
+        return {
+            backgroundColor:"#808080"
+        };
+    }       
+        else{
+            return{
+               backgroundColor:"#000000"
+            }; 
+    }
+};
+
+const Menu = (props) => {
     return(
-        <BrowserRouter>
-        <div>
-            <ul>
-            <li><Link>PROTAL</Link></li>
-            <li><Link><i className="far fa-home-alt"></i></Link></li>
-            <li><Link></Link></li>
-            <li><Link></Link></li>
-            </ul>
+       
+        <div className={styles.navContainer}>
+            <div className={styles.navlogo}>PROTAL</div>
+            <div className={styles.navSearch}>
+                <input type="text" value="Search"></input><ion-icon name="search-outline"></ion-icon>
+            </div>
+            <div className={styles.navIcons}>
+                <Link to="/"><ion-icon style={activeLink(props.history,'/')} name="home-outline"></ion-icon></Link>
+                <Link to="/"><ion-icon style={activeLink(props.history,'/home')} name="trending-up-outline"></ion-icon></Link>
+                <Link to="/profile"><ion-icon style={activeLink(props.history,'/profile')} name="person-outline"></ion-icon></Link>
+                <Link to="/signup"><ion-icon style={activeLink(props.history,'/signup')}  name="settings-outline"></ion-icon></Link>
+            </div>
         </div>
-        <div className="container">
-           
-        </div>
-        </BrowserRouter>
+        
     );
 }
 
-export default Menu;
+export default withRouter(Menu);

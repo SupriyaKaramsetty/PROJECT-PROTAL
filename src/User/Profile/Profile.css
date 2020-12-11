@@ -1,57 +1,123 @@
-.circle {
+.profileContainer{
+    color:white;
+    display:grid;
+    grid-template-columns: 25% 75%;
+    border-right: 1px solid white;
+}
+.accountOptions{
+    border-right: 1px solid #808080;
+}
+
+.profileDp {
     background: url("../../assets/profile.jpg");
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 95px;
-    margin-top: 45px;
-    
+    margin:auto ;
+    margin-top: 40px; 
 }
-p{
-    margin-top:15px;
+.name {
     text-align: center;
+    margin-top:20px;
+}
+.name p{
     color:white;
-    font-size:18px;
-    margin-bottom:0px;
-
 }
 small{
-    margin-left: 125px;
     background: -webkit-linear-gradient(#ddd, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.verticalline{
-        border:1px solid white;
-        min-height: 100vh;
-        width:0px;
-        background: white;
+.Icons{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
 }
-
-.wallpaper{
-    margin:0;
-    padding:0;
-    background-size: cover;
-    width:350px;
-    object-fit: cover;
-}
-
-i{
+ ion-icon{
+     font-size: 40px;
+    padding:20px;
     color:white;
 }
-
-.buzzes{
-    margin-left: -18px;
+.wallpaper{
+    width:100%;
+    height:250px;
+    background-size: contain;
+    /* object-fit: cover;
+    object-position: center ; */
 }
-.followers{
-    margin-left: -25px;
-}
-.imageresponsive{
-    width:175px;
-    display: flex;
-    height:175px;
+.likes{
+    display:flex;
     justify-content: center;
-    align-items: center;
-    margin:40px;
-    margin-bottom:0px;
+    /* align-items:center; */
 }
+.likes p{
+    margin:10px;
+    padding:60px;
+    text-align: center;
+}
+.likes ion-icon{
+    color:white;
+}
+.posts{
+    display:grid;
+    grid-template-columns: repeat(3,250px); 
+    justify-content: center;  
+    margin-top:-5%;
+}
+.posts img{
+    width:250px;
+    height:250px;
+    padding:25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .profileContainer{
+        grid:none;  
+    }
+    .accountOptions{
+        justify-content: center;
+        border-bottom: 1px solid white;
+    } */
+    .posts{
+        grid-template-columns: repeat(3,200px); 
+    }
+    .posts img{
+        width:200px;
+        height:200px;
+        padding:15px;
+        text-align: center;
+    }    
+    .likes p{
+        margin:7px;
+        padding:45px;
+        text-align: center;
+    
+}
+}
+@media screen and (max-width:770px) {
+    .profileContainer{
+        grid:none;
+    }
+    .accountOptions{
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+    .posts{
+        grid-template-columns: repeat(3,160px);        
+    }
+    .posts img{
+        width:160px;
+        height:160px;
+        padding:10px;
+        text-align: center;
+    }
+    .likes p{
+        margin:5px;
+        padding:30px;
+        text-align: center;
+    
+}
+}
+
+

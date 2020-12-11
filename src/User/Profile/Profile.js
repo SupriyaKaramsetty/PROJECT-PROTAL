@@ -1,16 +1,79 @@
 import  React, {Component} from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 import styles from './Profile.css';
 import wallpaper from '../../assets/wallpaper.jpg';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
 import Wallpapar from '../../assets/profile.jpg';
 
 const Profile = () => {
     return(
         <BrowserRouter>
-        <div className="container row">
+        <div className={styles.profileContainer}>
+            <div className={styles.accountOptions}>
+                <div className={styles.profileDp}></div>
+                <div className={styles.name}>
+                <p>Becky Helen<br></br>
+                 <small>Mexican Chef</small> 
+                 </p>
+                </div>
+                <div className={styles.Icons}>
+                    <Link to="/profile"><ion-icon name="person-outline"></ion-icon></Link>
+                    <Link to="/profile"><ion-icon name="reload-circle-outline"></ion-icon></Link>
+                    <Link to="/profile"><ion-icon name="briefcase-outline"></ion-icon></Link>                    
+                    <Link to="/profile"><ion-icon name="calendar-outline"></ion-icon></Link>
+                </div>
+            </div>
+            <div className={styles.profileAccount}>
+                <img className={styles.wallpaper} src={wallpaper} alt=""></img>
+                <div className={styles.likes}>
+                     <p>100<br></br>Uploads<br></br><ion-icon name="heart-outline"></ion-icon></p>
+                     <p>100<br></br> Buzzes<br></br><ion-icon name="heart-outline"></ion-icon></p>
+                     <p>100<br></br>Followers<br></br><ion-icon name="heart-outline"></ion-icon></p>
+                </div>
+                <div className={styles.posts}>
+                    
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                    <img src={wallpaper} alt=""></img>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
             <div className="col-4">
             <div className={styles.circle}></div>
             <p>Becky Helen</p>
@@ -27,19 +90,11 @@ const Profile = () => {
                     </div>
                     <div className={`col-md-3 ${styles.uploads}`}>
                         <p>100<br></br>Uploads</p>
-                        {/* <FontAwesomeIcon icon={faCoffee} />
-                        <FontAwesomeIcon icon={faHeart} />
-                        <span className="fa-stack fa-lg">
-                        <i className="fa fa-rectangle-o fa-stack-2x"></i>
-                        <i className="fa fa-heart-o fa-stack-1x" style={{fontSize:"30px"}}></i>
-                        </span> */}
+                       
                     </div>
                     <div className={`col-md-4 ${styles.buzzes}`}>
                         <p>100<br></br> Buzzes</p>
-                        {/* <span className="fa-stack fa-lg">
-                            <i className="fa fa-square-thin fa-stack-2x"></i>
-                            <i className="fa fa-twitter fa-stack-1x"></i>
-                        </span> */}
+                        
                     </div>
                     <div className={`col-md-3 ${styles.followers}`}>
                         <p>100<br></br>Followers</p>
@@ -70,7 +125,7 @@ const Profile = () => {
                 
 
                 </div>
-            </div>
+            </div> */}
 
         </div>
         
