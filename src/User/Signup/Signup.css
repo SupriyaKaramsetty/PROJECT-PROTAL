@@ -3,7 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .bg{
-    margin-top:150px;
+    margin-top:120px;
 }
 .signupContainer{
     margin-left:50px;
@@ -63,6 +63,10 @@ b{
     transition: all 0.4s ease 0s;
 }
 
+.signupData{
+    
+}
+
 input:first-child{
     margin-top:60px;
 }
@@ -79,22 +83,25 @@ input:first-child{
     
 }
 label{
+    
+    width:90px;
     align-items: left;
-    margin-left:-85px;
+    margin-left:-90px;
     color: rgb(143, 141, 141) !important;
     text-decoration: none;
     font-size:16px;
     background: rgb(248, 246, 246);
     border: 2 px solid  rgb(248, 246, 246) ;
-    padding:6px 4px;
+    padding:6px 2px;
     border-radius:10px;
     display: inline-block;
 }
+
 button{
     margin-top:30px;
 }
 
-.submit{
+.next{
     margin-left:70px;
     
     color: rgb(143, 141, 141) !important;
@@ -107,9 +114,7 @@ button{
     display: inline-block; 
 }
 
-.inputname{
-    padding:4px 18px;
-}
+
 .inputname{
     padding:4px 10px;
 }

@@ -1,5 +1,5 @@
 import styles from './Signup.css';
-import React,{Component} from 'react';
+import React from 'react';
 
 const Signup = () => {
     return(
@@ -15,17 +15,15 @@ const Signup = () => {
             <form>
                <div className={styles.signupData}>
                    <input type="text"  name="name" className={styles.inputfield}/>
-                   <label className={styles.inputname}>Name</label>
-                   </div> 
-               <div className={styles.signupData}>
+                   <label className={styles.inputname}>Name</label><br></br>
+                  
                    <input type="email" name="email" className={styles.inputfield}/>
-                   <label className={styles.inputname}>Email id</label>
-                   </div> 
-               <div className={styles.signupData}> 
+                   <label className={styles.inputname}>Email id</label><br></br>
+                   
                <input type="password" name="password" className={styles.inputfield}/>
-               <label className={styles.inputname}>Password</label> 
+               <label className={styles.inputname}>Password</label><br></br> 
                </div>
-                <button className={styles.submit}>Next</button>
+                <button className={styles.next}>Next</button>
             </form>
             </div>
         </div>

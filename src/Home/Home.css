@@ -1,67 +1,76 @@
-/* .status{
+
+
+.homeContainer{
+    margin:0 50px;
+}
+
+.status{
 border-radius: 50%;
-width: 150px;
-height: 150px;
+width: 100px;
+height: 100px;
 margin:auto ;
-margin-top: 40px;   
+padding: 1%;
+margin-top: 20px;  
+margin-bottom: 20px;  
 }
-
-.rec-pagination{
-display: none;
+button{
+    display:none;
 }
+/* .rec-pagination{
+    color:black;
+    background-color: black;
+}  */
 
-.rec-carousel-item{
-    padding:10px;
-    margin:50px;
+.talents{
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
 }
-
-.rec-carousel-item:focus{
-    border:none;
-} */
-
-
-.homebody {
-    padding-top: 2%;
-    width: 80%;
-    margin: auto;
-  }
-  .homeroundcarousel img {
-    border-radius: 50%;
-  }
-  .homeheadings {
+.talentName{
+    font-size:15px;
+    color:white;
     font-weight: bold;
-    font-size: 24px;
-    text-align: left;
-    color: white;
-  }
-  .homeelements img {
-    border: 1px solid white;
-  }
-  .homegrid {
-    display: grid;
+     margin-left:10px;
+    /* margin-top:30px; */ 
+}
+
+.block{
+    display:grid;
     grid-template-columns: 40% 20% 40%;
-  }
-  .homeimg1 {
-    width: 200px;
-    height: 200px;
-  }
-  .homeimg2 {
-    width: 100px;
-    height: 200px;
-  }
-  .homeimg34 {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    display: grid;
-    grid-template-rows: 50% 50%;
-  }
-  .homeimg3 {
-    width: 200px;
-    height: 90px;
-  }
-  .homeimg4 {
-    width: 200px;
-    height: 90px;
-    margin-top: 10px;
-  }
+     margin-bottom:10px;
+     margin-right:-30px;
+}
+
+.photo1{
+    
+    width:215px;
+    height:200px;
+    margin-right:80px;
+    /* margin-left:30px; */
+}
+.photo2{
+    width:95px;
+    height:200px;
+    margin-left:5px;
+}
+
+.combined34{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.photo3{
+    width:215px;
+    height:90px;
+}
+.photo4{
+    width:215px;
+    height:90px;
+}
+
+.block img{
+    border: 1px solid white;
+    /* margin:5px; */
+}
+
