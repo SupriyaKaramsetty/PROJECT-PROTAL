@@ -18,7 +18,6 @@ const activeLink = (history,path) =>{
 
 const Menu = (props) => {
     return(
-       
         <div className={styles.navContainer}>
             <div className={styles.navlogo}>PROTAL</div>
             <div className={styles.navSearch}>
@@ -30,8 +29,7 @@ const Menu = (props) => {
                 <Link to="/profile"><ion-icon style={activeLink(props.history,'/profile')} name="person-outline"></ion-icon></Link>
                 <Link to="/signup"><ion-icon style={activeLink(props.history,'/signup')}  name="settings-outline"></ion-icon></Link>
             </div>
-        </div>
-        
+        </div>  
     );
 }
 
